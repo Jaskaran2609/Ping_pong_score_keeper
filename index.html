@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>PING PONG</title>
+    <style>
+        .winner {
+            color: greenyellow;
+        }
+
+        .loser {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body style="background-color:rgb(238, 245, 252)">
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+
+                                <img src="./istockphoto-503250996-612x612.jpg" alt="">
+                            </figure>
+                        </div>
+
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                PING PONG SCORE KEEPER
+                            </p>
+                            <button class="card-header-icon" aria-label="more options">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class=" title is-1 "> <span id="display1">0</span> of <span id="display2">0</span>
+                                </h1>
+                                <p class="subtitle"> Use the buttons below to keep the score </p>
+                                <label for="lableme" class="label is-large is-inline "> Playing to </label>
+                                <div class="select is-rounded" id="lableme">
+
+                                    <select name="" id="numofgoal">
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="is-primary is-large card-footer-item button  " id="player1scr">+1 Player one
+                            </div>
+                            <div class="is-danger is-large card-footer-item button" id="player2scr">+1 Player two</div>
+                            <div class="button  is-large is-warning card-footer-item" id="rst">Reset SCORE</div>
+
+                        </footer>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
